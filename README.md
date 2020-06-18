@@ -7,5 +7,9 @@ Aquí encontrarás unos ejemplos básicos del uso de las plataformas multiagente
 
 | Caracterísitica  | Magentix2 | Jade | Jack | Spade |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
-| Lenguaje de comunicación de agente  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
-| Lenguaje de programación soportado  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
+| Lenguaje de comunicación de agente | AMPQ | FIPA ACL | KQML/FIPA ACL | FIPA ACL |
+| Lenguaje de programación soportado  | Java  | Java  | Jack/Java  | Python  |
+| Tipos de agentes soportados | Cualquiera  | Cualquiera  | BDI  | Cualquiera  |
+| Licencia de software | LESSER GENERAL PUBLIC LICENSE | LESSER GENERAL PUBLIC LICENSE  | Software Propietario  | LESSER GENERAL PUBLIC LICENSE  |
+| Documentación  | Completa  | Completa  | Completa  | Completa  |
+| URL  | http://www.gti-ia.upv.es/sma/tools/magentix2/index.php  | https://jade.tilab.com/  | https://aosgrp.com/products/jack/  | https://spade-mas.readthedocs.io/en/latest/readme.html  |
