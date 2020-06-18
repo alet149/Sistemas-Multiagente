@@ -1,0 +1,99 @@
+<BAPI_Agent
+    :version  52
+    :superclass  "Agent"
+    :doc
+	<BAPI_Text
+	    :hard_lab  "Doc:"
+	    :lab  "Documentation"
+	    :val  `/**
+ * 
+ */`
+	>
+    :name  "Agente"
+    :filename  "robot/Agente.gagent"
+    :type  "aos.jack.ed.Agent"
+    :java
+	<BAPI_Java
+	    :pkg
+		<BAPI_TextLine
+		    :val  "robot"
+		>
+	    :code
+		(
+		    <BAPI_Text
+			:lab  "void paintPart"
+			:val  `public void paintPart(){
+    postEventAndWait(pev.paint("white"));
+}
+`
+		    >
+		)
+	>
+    :constructor
+	<BAPI_Text
+	    :lab  "Constructor"
+	    :val  `public <<Type>>(String name)
+{
+    super(name);
+}
+`
+	    :init  `public <<Type>>(String name)
+{
+    super(name);
+}
+`
+	    :isLabelEditable  :false
+	>
+    :events
+	(
+	    <BAPI_FileRef
+		:name  "Pintar"
+		:filename  "robot/Pintar.gevent"
+		:label  "handles"
+		:type  "aos.jack.ed.Event"
+		:java
+		    <BAPI_Java
+			:pkg
+			    <BAPI_TextLine
+			    >
+		    >
+		:attrs  "NamedEventList.attrs"
+		:refType  "handles"
+		:hasName  :false
+	    >
+	    <BAPI_FileRef
+		:name  "Pintar"
+		:filename  "robot/Pintar.gevent"
+		:label  "posts Pintar"
+		:type  "aos.jack.ed.Event"
+		:java
+		    <BAPI_Java
+			:pkg
+			    <BAPI_TextLine
+			    >
+		    >
+		:attrs  "NamedEventList.attrs"
+		:refType  "posts"
+		:refName  "pev"
+	    >
+	)
+    :plans
+	(
+	    <BAPI_FileRef
+		:name  "PaintSpecifiedCurrentColour"
+		:filename  "robot/PaintSpecifiedCurrentColour.gplan"
+		:label  "uses"
+		:type  "aos.jack.ed.Plan"
+		:java
+		    <BAPI_Java
+			:pkg
+			    <BAPI_TextLine
+			    >
+		    >
+		:attrs  "PlanList.attrs"
+		:refType  "uses"
+		:hasName  :false
+		:dropHandlerName  "Plan.drop"
+	    >
+	)
+>

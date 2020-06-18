@@ -1,0 +1,38 @@
+/*******************************************************************
+ * Created by the JDE: Sun May 31 13:13:29 COT 2020
+ * WARNING: If you are editing this file from outside the JDE, you
+ * should make sure to load the changes back into the JDE by setting
+ * the preference "Check for outside changes..." in the "Text Editor"
+ * preference tab or reload the component manually.
+ * Otherwise you will lose your changes next time the file is generated.
+ *******************************************************************/
+
+package robot;
+
+
+/**
+ * 
+ */
+public plan PintarColorActualEspecificado extends Plan {
+    #handles event Pintar eventPintar;
+    
+    static boolean relevant(Pintar eventPintar)
+       {
+      return (eventPintar.color != null && eventPintar.color.length() > 0);
+       }
+    
+    context()
+    {
+        true;
+    }
+    
+    #reasoning method
+    body()
+    {
+    System.out.println("Pintando la parte requerida de color: " +
+                          eventPintar.color);
+    }
+    
+
+}
+

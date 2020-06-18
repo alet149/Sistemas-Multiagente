@@ -1,0 +1,37 @@
+/*******************************************************************
+ * Created by the JDE: Sun May 31 13:13:30 COT 2020
+ * WARNING: If you are editing this file from outside the JDE, you
+ * should make sure to load the changes back into the JDE by setting
+ * the preference "Check for outside changes..." in the "Text Editor"
+ * preference tab or reload the component manually.
+ * Otherwise you will lose your changes next time the file is generated.
+ *******************************************************************/
+
+package robot;
+
+
+/**
+ * 
+ */
+public plan PintarCualquierColor extends Plan {
+    #handles event Pintar ev;
+    
+    static boolean relevant(Pintar ev)
+    {
+        return true;
+    }
+    
+    context()
+    {
+        true;
+    }
+    
+    #reasoning method
+    body()
+    {
+    System.out.println("NO se especificó el color. Pintando la parte");
+    }
+    
+
+}
+

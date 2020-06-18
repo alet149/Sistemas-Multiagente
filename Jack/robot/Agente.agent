@@ -1,0 +1,32 @@
+/*******************************************************************
+ * Created by the JDE: Sun May 31 13:13:29 COT 2020
+ * WARNING: If you are editing this file from outside the JDE, you
+ * should make sure to load the changes back into the JDE by setting
+ * the preference "Check for outside changes..." in the "Text Editor"
+ * preference tab or reload the component manually.
+ * Otherwise you will lose your changes next time the file is generated.
+ *******************************************************************/
+
+package robot;
+
+
+/**
+ * 
+ */
+public agent Agente extends Agent {
+    #handles event Pintar;
+    #posts event Pintar pev;
+    #uses plan PintarColorActualEspecificado;
+    #uses plan PintarCualquierColor;
+
+    public Agente(String nombre)
+    {
+        super(nombre);
+    }
+
+    public void pintarParte(String color){
+        postEventAndWait(pev.pintar(color));
+    }
+
+}
+
