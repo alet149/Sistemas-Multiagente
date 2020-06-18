@@ -5,7 +5,7 @@ Actualmente existen diferentes plataformas que permiten modelar un sistema Multi
 Aquí encontrarás unos ejemplos básicos del uso de las plataformas multiagentes Jack, Jade, Magentix2 y Spade.
 
 
-| Caracterísitica  | Magentix2 |
-| ------------- | ------------- |
-| Lenguaje de comunicación de agente  | Content Cell  |
-| Lenguaje de programación soportado  | Content Cell  |
+| Caracterísitica  | Magentix2 | Jade | Jack | Spade |
+| ------------- | ------------- | ------------- | ------------- | ------------- |
+| Lenguaje de comunicación de agente  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
+| Lenguaje de programación soportado  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
