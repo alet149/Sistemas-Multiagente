@@ -4,6 +4,6 @@ Actualmente existen diferentes plataformas que permiten modelar un sistema Multi
 
 Aquí encontrarás unos ejemplos básicos del uso de las plataformas multiagentes Jack, Jade, Magentix2 y Spade.
 
-| Attempt | #1 | #2 |
+| Caracterísitica | Magentix2 | Jade | Jack | Spade |
 | :---: | :---: | :---: |
-| Seconds | 301 | 283 |
+| Seconds | 301 | 283 | Seconds | 301 | 283 |
